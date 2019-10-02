@@ -1,0 +1,36 @@
+body {
+  /*background-color: #4a5d23;*/
+  background-color: #92dce5
+}
+
+.first {
+    width: 50vw;
+    height: 5em;
+    margin: 2em auto;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects h1 {
+    align-self: center;
+    margin-bottom: 3em;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.list div {
+    width: 15vw;
+}
+
+.list img {
+    width: 100%;
+}
