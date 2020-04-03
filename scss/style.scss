@@ -3,35 +3,52 @@
 $border-color: #1abc9c;
 $background-outside: #323234;
 $background-inside: #474749;
+$big-size: 3.5vh;
+$little-size: 3vh;
 
 body {
   font-family: 'Tajawal', sans-serif;
   font-weight: 300;
-  font-size: 3.5vh;
-}
-
-h1 {
-  font-family: 'PT Serif', serif;
+  font-size: $little-size;
 }
 
 h1, h2, h3 {
+  font-family: 'PT Serif', serif;
   font-weight: 400;
-  font-size: 4.5vh;
+  font-size: $big-size;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 // Header
 
-.profile-card {
-  display: flex;
-  img {
-    border-radius: 50%;
-    height: 15vh;
-  }
-}
-
-.profile-card-info {
+header {
+  padding: 1vh 1vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1vh 1vw;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  order: 1;
+}
+
+.profile-description {
+  order: 3;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  order: 2;
+}
+
+.social-media {
+  font-size: $big-size;
+  display: flex;
 }
