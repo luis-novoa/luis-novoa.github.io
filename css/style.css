@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Tajawal:wght@200;300;400;500&display=swap");
+body {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+h1 {
+  font-family: 'PT Serif', serif;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  font-size: 4.5vh;
+}
+
+.profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  height: 15vh;
+}
+
+.profile-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1vh 1vw;
+}
+/*# sourceMappingURL=style.css.map */
