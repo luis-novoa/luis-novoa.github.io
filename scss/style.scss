@@ -38,6 +38,34 @@ a {
   position: relative;
 }
 
+$arrow-size: 3vw;
+
+.arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: $arrow-size solid transparent;
+  border-bottom: $arrow-size solid transparent; 
+  border-right:$arrow-size solid #2f394d;
+  &:not(:last-child) {
+    margin-right: -1vw;
+  }
+}
+
+.arrow-right{
+  width: 0; 
+  height: 0; 
+  border-top: $arrow-size solid transparent;
+  border-bottom: $arrow-size solid transparent; 
+  border-left:$arrow-size solid #2f394d;
+  &:not(:last-child) {
+    margin-right: -1vw;
+  }
+}
+
+.page-switcher, .page-switcher a {
+  display: flex;
+}
+
 // Header
 
 header {
@@ -71,6 +99,11 @@ header {
   div {
     padding-right: 2vw;
   }
+}
+
+.email {
+  background: linear-gradient(#defbda, #defbda 45%,#8cc185 45% ,#8cc185);
+  margin-bottom: 4vh;
 }
 
 // Main page
@@ -128,7 +161,7 @@ header {
   article {
     width: 100vw;
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 17vh;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
@@ -141,9 +174,23 @@ header {
       text-align: center;
       padding: 0 5vw;
     }
+    a {
+      background: linear-gradient(#f6f7eb, #f6f7eb 45%,#f7bbbb 45% ,#f7bbbb) ;
+    }
   }
 }
 
-.tecnologies {
-  margin: 0 auto;
+.technologies, .project-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  margin-top: 3vh;
+  span {
+    background: #f7bbbb;
+    padding: 1vh 1vw 0.1vh 1vw;
+  }
+  span:not(:last-child), a:not(:last-child) {
+    margin-right: 2.5vw;
+  }
 }

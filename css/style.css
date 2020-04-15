@@ -32,6 +32,36 @@ a {
   position: relative;
 }
 
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 3vw solid transparent;
+  border-bottom: 3vw solid transparent;
+  border-right: 3vw solid #2f394d;
+}
+
+.arrow-left:not(:last-child) {
+  margin-right: -1vw;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 3vw solid transparent;
+  border-bottom: 3vw solid transparent;
+  border-left: 3vw solid #2f394d;
+}
+
+.arrow-right:not(:last-child) {
+  margin-right: -1vw;
+}
+
+.page-switcher, .page-switcher a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   padding: 0 3vw;
   padding-top: 2vh;
@@ -84,6 +114,12 @@ header {
 
 .social-media div {
   padding-right: 2vw;
+}
+
+.email {
+  background: -webkit-gradient(linear, left top, left bottom, from(#defbda), color-stop(45%, #defbda), color-stop(45%, #8cc185), to(#8cc185));
+  background: linear-gradient(#defbda, #defbda 45%, #8cc185 45%, #8cc185);
+  margin-bottom: 4vh;
 }
 
 .main-page {
@@ -159,7 +195,7 @@ header {
 .projects article {
   width: 100vw;
   height: 100vh;
-  padding-top: 15vh;
+  padding-top: 17vh;
   padding-bottom: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +221,30 @@ header {
   padding: 0 5vw;
 }
 
-.tecnologies {
-  margin: 0 auto;
+.projects article a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f7eb), color-stop(45%, #f6f7eb), color-stop(45%, #f7bbbb), to(#f7bbbb));
+  background: linear-gradient(#f6f7eb, #f6f7eb 45%, #f7bbbb 45%, #f7bbbb);
+}
+
+.technologies, .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5vw;
+  margin-top: 3vh;
+}
+
+.technologies span, .project-links span {
+  background: #f7bbbb;
+  padding: 1vh 1vw 0.1vh 1vw;
+}
+
+.technologies span:not(:last-child), .technologies a:not(:last-child), .project-links span:not(:last-child), .project-links a:not(:last-child) {
+  margin-right: 2.5vw;
 }
 /*# sourceMappingURL=style.css.map */
