@@ -1,28 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Tajawal:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
 }
 
 body {
   font-family: 'Tajawal', sans-serif;
   font-weight: 300;
   font-size: 3vh;
+  color: #2f394d;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1, h2, h3 {
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
   font-size: 3.5vh;
 }
 
 a {
-  color: black;
+  color: #2f394d;
   text-decoration: none;
 }
 
+.wrapper {
+  position: relative;
+}
+
 header {
-  padding: 2vh 3vw;
+  padding: 0 3vw;
+  padding-top: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,6 +42,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  background: #defbda;
+  width: 100vw;
+  -webkit-box-shadow: 0px -20px 7px 16px;
+          box-shadow: 0px -20px 7px 16px;
 }
 
 .profile-card {
@@ -42,15 +60,6 @@ header {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.profile-description {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
 }
 
 .social-links {
@@ -63,9 +72,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   padding: 1vh 0;
 }
 
@@ -78,5 +84,108 @@ header {
 
 .social-media div {
   padding-right: 2vw;
+}
+
+.main-page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  background: #defbda;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20vh 7vw 10vh 7vw;
+}
+
+.main-page-card {
+  text-align: center;
+}
+
+.main-page-card h1 {
+  font-size: 7vh;
+  margin-bottom: 2vh;
+}
+
+.main-page-card span {
+  font-size: 4vh;
+}
+
+.main-page-description {
+  text-align: center;
+}
+
+.main-page-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30vw;
+  font-size: 4vh;
+}
+
+.projects, .publications {
+  background: #f6f7eb;
+}
+
+.projects h2 {
+  display: none;
+}
+
+.projects article {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects article img {
+  height: 30vh;
+}
+
+.projects article p {
+  text-align: center;
+  padding: 0 5vw;
+}
+
+.tecnologies {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
