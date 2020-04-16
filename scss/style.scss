@@ -66,6 +66,10 @@ $arrow-size: 3vw;
   display: flex;
 }
 
+.page-switcher {
+  margin-top: 3vh;
+}
+
 // Header
 
 header {
@@ -103,7 +107,6 @@ header {
 
 .email {
   background: linear-gradient(#defbda, #defbda 45%,#8cc185 45% ,#8cc185);
-  margin-bottom: 4vh;
 }
 
 // Main page
@@ -111,9 +114,9 @@ header {
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: #defbda;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -149,12 +152,32 @@ header {
   font-size: 4vh;
 }
 
+#main-page:target {
+  animation-name: nextPage;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  // display: none;
+}
+
+@keyframes nextPage {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 // Projects
 .projects, .publications {
   background: #f6f7eb;
 }
 
 .projects {
+  position: relative;
+  bottom: 100vh;
   h2 {
     display: none;
   }
@@ -176,6 +199,14 @@ header {
     }
     a {
       background: linear-gradient(#f6f7eb, #f6f7eb 45%,#f7bbbb 45% ,#f7bbbb) ;
+    }
+  }
+  .page-switcher {
+    padding: 0 25vw;
+    display: flex;
+    justify-content: space-between;
+    a {
+      background: none;
     }
   }
 }
