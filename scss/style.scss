@@ -152,22 +152,13 @@ header {
   font-size: 4vh;
 }
 
-#main-page:target {
-  animation-name: nextPage;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  // display: none;
+#main-page {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
-@keyframes nextPage {
-  0%{
-    opacity: 1;
-  }
-  100%{
-    // display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
+#main-page:target {
+  opacity: 0;
 }
 
 // Projects

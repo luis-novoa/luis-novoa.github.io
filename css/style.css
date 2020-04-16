@@ -189,33 +189,14 @@ header {
   font-size: 4vh;
 }
 
+#main-page {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 #main-page:target {
-  -webkit-animation-name: nextPage;
-          animation-name: nextPage;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes nextPage {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes nextPage {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+  opacity: 0;
 }
 
 .projects, .publications {
