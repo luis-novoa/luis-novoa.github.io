@@ -229,10 +229,11 @@ header {
 }
 
 #first-project {
-  bottom: 100vh;
+  bottom: 200vh;
   transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
+  bottom: 100vh;
   transition: opacity 1s, visibility 1s;
 }

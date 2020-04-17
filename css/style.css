@@ -295,12 +295,13 @@ header {
 }
 
 #first-project {
-  bottom: 100vh;
+  bottom: 200vh;
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
+  bottom: 100vh;
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
