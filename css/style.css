@@ -56,7 +56,7 @@ a {
   margin-right: -1vw;
 }
 
-.page-switcher, .page-switcher a {
+.page-switcher, .page-switcher button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +64,19 @@ a {
 
 .page-switcher {
   margin-top: 3vh;
+}
+
+.page-switcher button {
+  background: none;
+  border: none;
+}
+
+.page-switcher button:focus {
+  outline: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 header {
@@ -77,7 +90,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background: #defbda;
   width: 100vw;
   -webkit-box-shadow: 0px -20px 7px 16px;
@@ -129,7 +142,7 @@ header {
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background: #defbda;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,12 +204,13 @@ header {
 
 #main-page {
   opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
 }
 
 #main-page:target {
   opacity: 0;
+  visibility: hidden;
 }
 
 .projects, .publications {
@@ -230,6 +244,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  background: inherit;
 }
 
 .projects article img {
@@ -256,10 +272,6 @@ header {
           justify-content: space-between;
 }
 
-.projects .page-switcher a {
-  background: none;
-}
-
 .technologies, .project-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,5 +292,23 @@ header {
 
 .technologies span:not(:last-child), .technologies a:not(:last-child), .project-links span:not(:last-child), .project-links a:not(:last-child) {
   margin-right: 2.5vw;
+}
+
+#first-project {
+  bottom: 100vh;
+  -webkit-transition: opacity 1s, z-index 1s;
+  transition: opacity 1s, z-index 1s;
+  -webkit-transition-delay: 0s, 1s;
+          transition-delay: 0s, 1s;
+}
+
+#first-project:target {
+  opacity: 0;
+  z-index: -1;
+}
+
+#second-project {
+  -webkit-transition: z-index 1s;
+  transition: z-index 1s;
 }
 /*# sourceMappingURL=style.css.map */

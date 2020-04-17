@@ -1,14 +1,12 @@
 let mainPage = document.getElementById('main-page');
 let modifiedMainPage = window.getComputedStyle(mainPage);
 let firstProjectBackLink = document.getElementById('first-page');
+let firstProjectForwardLink = document.getElementById('next-project');
 
-mainPage.addEventListener('transitionend', () => {
-  console.log();
-  if (modifiedMainPage.opacity == 0) {
-    mainPage.style.visibility = 'hidden';
-  }
-});
+// firstProjectBackLink.addEventListener('click', () => {
+//   mainPage.classList.remove('hidden');
+// });
 
-firstProjectBackLink.addEventListener('click', () => {
-  mainPage.style.visibility = 'visible';
-});
+// firstProjectForwardLink.addEventListener('click', () => {
+//   mainPage.classList.add('hidden');
+// });s
