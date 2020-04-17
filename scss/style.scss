@@ -217,10 +217,15 @@ header {
   span {
     background: #f7bbbb;
     padding: 1vh 1vw 0.1vh 1vw;
+    margin-bottom: 1vh;
   }
   span:not(:last-child), a:not(:last-child) {
     margin-right: 2.5vw;
   }
+}
+
+.project-links {
+  margin-top: 2vh;
 }
 
 #first-project {
