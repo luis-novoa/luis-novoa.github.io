@@ -225,14 +225,9 @@ header {
 
 #first-project {
   bottom: 100vh;
-  transition: opacity 1s, z-index 1s;
-  transition-delay: 0s, 1s;
-  &:target {
-    opacity: 0;
-    z-index: -1;
-  }
+  transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
-  transition: z-index 1s;
+  transition: opacity 1s, visibility 1s;
 }

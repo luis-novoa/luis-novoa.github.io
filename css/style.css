@@ -291,19 +291,12 @@ header {
 
 #first-project {
   bottom: 100vh;
-  -webkit-transition: opacity 1s, z-index 1s;
-  transition: opacity 1s, z-index 1s;
-  -webkit-transition-delay: 0s, 1s;
-          transition-delay: 0s, 1s;
-}
-
-#first-project:target {
-  opacity: 0;
-  z-index: -1;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
-  -webkit-transition: z-index 1s;
-  transition: z-index 1s;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
 }
 /*# sourceMappingURL=style.css.map */
