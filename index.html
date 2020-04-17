@@ -50,7 +50,7 @@
           </nav>
         </nav>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>Projects</h2>
         <article id="third-project">
           <h3>My Portfolio</h3>
@@ -70,11 +70,11 @@
               <a href="https://github.com/luis-novoa/my_portfolio">REPOSITORY</a>
             </nav>
             <nav class="page-switcher">
-              <button id="">
+              <button id="show-second-project">
                 <div class="arrow-left"></div>
                 <div class="arrow-left"></div>
               </button>
-              <button>
+              <button id="hide-third-project">
                 <div class="arrow-right"></div>
                 <div class="arrow-right"></div>
               </button>
@@ -102,7 +102,7 @@
                 <div class="arrow-left"></div>
                 <div class="arrow-left"></div>
               </button>
-              <button>
+              <button id="hide-second-project">
                 <div class="arrow-right"></div>
                 <div class="arrow-right"></div>
               </button>
@@ -146,16 +146,22 @@
         <h2>Articles</h2>
         <article>
           <a href="https://hackernoon.com/understanding-flexbox-by-small-steps-y96t321m">
-            <span class="date">January 20th 2020</span>
+            <span class="date">January 20th 2020</span><br>
             <h3>Understanding Flexbox By Small Steps</h3>
           </a>
         </article>
         <article>
           <a href="https://hackernoon.com/how-to-use-rspec-from-basics-to-testing-user-input-i03k36m3">
-            <span class="date">January 31st 2020</span>
+            <span class="date">January 31st 2020</span><br>
             <h3>How to Use RSpec From Basics to Testing User Input</h3>
           </a>
         </article>
+        <nav class="page-switcher">
+          <button id="show-third-project">
+            <div class="arrow-left"></div>
+            <div class="arrow-left"></div>
+          </button>
+        </nav>
       </section>
     </div>
     <script src="https://kit.fontawesome.com/4769bb681b.js"></script>

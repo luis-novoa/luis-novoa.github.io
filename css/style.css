@@ -69,10 +69,15 @@ a {
 .page-switcher button {
   background: none;
   border: none;
+  padding: 0;
 }
 
 .page-switcher button:focus {
   outline: none;
+}
+
+.page-switcher button::-moz-focus-inner {
+  border: none;
 }
 
 .hidden {
@@ -208,7 +213,7 @@ header {
   transition: opacity 1s, visibility 1s;
 }
 
-.projects, .publications {
+.projects {
   background: #f6f7eb;
 }
 
@@ -304,5 +309,45 @@ header {
   bottom: 100vh;
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
+}
+
+#projects {
+  z-index: 1;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+.publications {
+  position: relative;
+  bottom: 400vh;
+  background: #f6f7eb;
+  width: 100vw;
+  height: 100vh;
+  padding: 17vh 10vw 10vh 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.publications p {
+  text-align: center;
+}
+
+.publications h3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f7eb), color-stop(60%, #f6f7eb), color-stop(60%, #f7bbbb), to(#f7bbbb));
+  background: linear-gradient(#f6f7eb, #f6f7eb 60%, #f7bbbb 60%, #f7bbbb);
+  display: inline;
+  line-height: 4vh;
 }
 /*# sourceMappingURL=style.css.map */
