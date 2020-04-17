@@ -350,4 +350,88 @@ header {
   display: inline;
   line-height: 4vh;
 }
+
+@media only screen and (min-width: 1200px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+  .arrow-left {
+    border-top: 1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-right: 1vw solid #2f394d;
+  }
+  .arrow-left:not(:last-child) {
+    margin-right: -0.5vw;
+  }
+  .arrow-right {
+    border-top: 1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-left: 1vw solid #2f394d;
+  }
+  .arrow-right:not(:last-child) {
+    margin-right: -0.5vw;
+  }
+  #first-switcher-desktop {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-page {
+    width: 33vw;
+    -webkit-box-shadow: -20px 0px 7px 16px;
+            box-shadow: -20px 0px 7px 16px;
+  }
+  .main-page-media {
+    width: 10vw;
+  }
+  .fa-linkedin {
+    -webkit-transition: color 1s;
+    transition: color 1s;
+  }
+  .fa-linkedin:hover {
+    color: #0077b5;
+  }
+  .fa-twitter {
+    -webkit-transition: color 1s;
+    transition: color 1s;
+  }
+  .fa-twitter:hover {
+    color: #1da1f3;
+  }
+  .fa-github {
+    -webkit-transition: color 1s;
+    transition: color 1s;
+  }
+  .fa-github:hover {
+    color: #61865c;
+  }
+  .projects article {
+    width: 67vw;
+    left: 33vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+  }
+  .projects article img {
+    height: 45vh;
+  }
+  .projects .page-switcher {
+    width: 67vw;
+  }
+  .technologies span:not(:last-child), .technologies a:not(:last-child), .project-links span:not(:last-child), .project-links a:not(:last-child) {
+    margin-right: 1.5vw;
+  }
+  .publications {
+    width: 67vw;
+    left: 33vw;
+    padding: 10vh 10vw 5vh 10vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .publications h2, .publications .page-switcher {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */

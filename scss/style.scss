@@ -269,3 +269,95 @@ header {
     line-height: 4vh;
   }
 }
+
+//// Desktop version
+
+@media only screen and (min-width: 1200px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+
+  $arrow-size: 1vw;
+  .arrow-left {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-right: $arrow-size solid #2f394d;
+    &:not(:last-child) {
+      margin-right: -0.5vw;
+    }
+  }
+
+  .arrow-right {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-left: $arrow-size solid #2f394d;
+    &:not(:last-child) {
+      margin-right: -0.5vw;
+    }
+  }
+
+  #first-switcher-desktop {
+    justify-content: center;
+  }
+
+  .main-page {
+    width: 33vw;
+    box-shadow: -20px 0px 7px 16px;
+  }
+
+  .main-page-media {
+    width: 10vw;
+  }
+
+  .fa-linkedin{
+    transition: color 1s;
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  .fa-twitter{
+    transition: color 1s;
+    &:hover {
+      color: #1da1f3;
+    }
+  }
+
+  .fa-github{
+    transition: color 1s;
+    &:hover {
+      color: #61865c;
+    }
+  }
+
+  .projects {
+    article {
+      width: 67vw;
+      left: 33vw;
+      padding-top: 10vh;
+      padding-bottom: 5vh;
+      img {
+        height: 45vh;
+      }
+    }
+    .page-switcher {
+    width: 67vw;
+    }
+  }
+
+  .technologies, .project-links {
+    span:not(:last-child), a:not(:last-child) {
+      margin-right: 1.5vw;
+    }
+  }
+
+  .publications {
+    width: 67vw;
+    left: 33vw;
+    padding: 10vh 10vw 5vh 10vw;
+    align-items: flex-start;
+    h2, .page-switcher {
+      align-self: center;
+    }
+  }
+}

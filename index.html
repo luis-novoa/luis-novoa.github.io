@@ -11,18 +11,18 @@
 
   <body>
     <div class="wrapper">
-      <header>
+      <header class="desktop-hidden">
         <div class="profile-card">
           <h1>Luis Novoa</h1>
           <span>Web Development</span>
         </div>
         <nav class="social-links">
           <div class="social-media">
-            <div class="linkedin"><a class="fab fa-linkedin" href="https://www.linkedin.com/in/luismattenovoa/"></a>
+            <div id="linkedin"><a class="fab fa-linkedin" href="https://www.linkedin.com/in/luismattenovoa/"></a>
             </div>
-            <div class="twitter"><a class="fab fa-twitter" href="https://twitter.com/LuisMatteNovoa"></a>
+            <div id="twitter"><a class="fab fa-twitter" href="https://twitter.com/LuisMatteNovoa"></a>
             </div>
-            <div class="github"><a class="fab fa-github" href="https://github.com/luis-novoa"></a></div>
+            <div id="github"><a class="fab fa-github" href="https://github.com/luis-novoa"></a></div>
           </div>
           <a class="email" href="mailto:luis.matte.novoa@gmail.com">luis.matte.novoa@gmail.com</a>
         </nav>
@@ -42,7 +42,7 @@
             <div class="github"><a class="fab fa-github" href="https://github.com/luis-novoa"></a></div>
           </div>
           <a class="email" href="mailto:luis.matte.novoa@gmail.com">luis.matte.novoa@gmail.com</a>
-          <nav class="page-switcher">
+          <nav class="page-switcher desktop-hidden">
             <button id="hide-main-page">
               <div class="arrow-right"></div>
               <div class="arrow-right"></div>
@@ -54,7 +54,7 @@
         <h2>Projects</h2>
         <article id="third-project">
           <h3>My Portfolio</h3>
-          <img src="" alt="My Portfolio website preview">
+          <img src="./img/portfolio-small.png" alt="My Portfolio website preview">
           <div class="article-content">
             <p>
               Responsive website to showcase my latest projects.
@@ -129,8 +129,8 @@
               <a href="https://runnerln.herokuapp.com/">LIVE DEMO</a>
               <a href="https://github.com/luis-novoa/runner_capstone">REPOSITORY</a>
             </nav>
-            <nav class="page-switcher">
-              <button id="show-main-page">
+            <nav class="page-switcher" id="first-switcher-desktop">
+              <button id="show-main-page" class="desktop-hidden">
                 <div class="arrow-left"></div>
                 <div class="arrow-left"></div>
               </button>
