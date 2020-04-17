@@ -166,10 +166,6 @@ header {
 #main-page {
   opacity: 1;
   transition: opacity 1s, visibility 1s;
-  &:target {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 // Projects

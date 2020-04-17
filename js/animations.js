@@ -1,12 +1,14 @@
 let mainPage = document.getElementById('main-page');
 let modifiedMainPage = window.getComputedStyle(mainPage);
-let firstProjectBackLink = document.getElementById('first-page');
-let firstProjectForwardLink = document.getElementById('next-project');
+let hideMainPage = document.getElementById('hide-main-page');
+let showMainPage = document.getElementById('show-main-page');
 
-// firstProjectBackLink.addEventListener('click', () => {
-//   mainPage.classList.remove('hidden');
-// });
+hideMainPage.addEventListener('click', () => {
+  mainPage.style.opacity = 0;
+  mainPage.style.visibility = 'hidden';
+});
 
-// firstProjectForwardLink.addEventListener('click', () => {
-//   mainPage.classList.add('hidden');
-// });s
+showMainPage.addEventListener('click', () => {
+  mainPage.style.opacity = 1;
+  mainPage.style.visibility = 'visible';
+});

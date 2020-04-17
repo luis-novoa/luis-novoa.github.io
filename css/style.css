@@ -208,11 +208,6 @@ header {
   transition: opacity 1s, visibility 1s;
 }
 
-#main-page:target {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .projects, .publications {
   background: #f6f7eb;
 }
