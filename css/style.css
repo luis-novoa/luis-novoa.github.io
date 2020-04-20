@@ -417,6 +417,9 @@ header {
   .projects .page-switcher {
     width: 67vw;
   }
+  .technologies span, .project-links span {
+    padding: 1vh 0.5vw 0.1vh 0.5vw;
+  }
   .technologies span:not(:last-child), .technologies a:not(:last-child), .project-links span:not(:last-child), .project-links a:not(:last-child) {
     margin-right: 1.5vw;
   }

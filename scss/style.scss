@@ -1,8 +1,5 @@
 // General
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap');
-$border-color: #1abc9c;
-$background-outside: #323234;
-$background-inside: #474749;
 $big-size: 3.5vh;
 $little-size: 3vh;
 
@@ -346,6 +343,9 @@ header {
   }
 
   .technologies, .project-links {
+    span {
+      padding: 1vh 0.5vw 0.1vh 0.5vw;
+    }
     span:not(:last-child), a:not(:last-child) {
       margin-right: 1.5vw;
     }
