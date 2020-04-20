@@ -1,0 +1,363 @@
+// General
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap');
+$big-size: 3.5vh;
+$little-size: 3vh;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  font-size: $little-size;
+  color: #2f394d;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: $big-size;
+}
+
+a {
+  color: #2f394d;
+  text-decoration: none;
+}
+
+.wrapper {
+  position: relative;
+}
+
+$arrow-size: 3vw;
+
+.arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: $arrow-size solid transparent;
+  border-bottom: $arrow-size solid transparent; 
+  border-right:$arrow-size solid #2f394d;
+  &:not(:last-child) {
+    margin-right: -1vw;
+  }
+}
+
+.arrow-right{
+  width: 0; 
+  height: 0; 
+  border-top: $arrow-size solid transparent;
+  border-bottom: $arrow-size solid transparent; 
+  border-left:$arrow-size solid #2f394d;
+  &:not(:last-child) {
+    margin-right: -1vw;
+  }
+}
+
+.page-switcher, .page-switcher button {
+  display: flex;
+}
+
+.page-switcher {
+  margin-top: 3vh;
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+    &::-moz-focus-inner {
+      border: none
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+// Header
+
+header {
+  padding: 0 3vw;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  background: #defbda;
+  width: 100vw;
+  box-shadow: 0px -20px 7px 16px;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0;
+}
+
+.social-media {
+  font-size: $big-size;
+  display: flex;
+  div {
+    padding-right: 2vw;
+  }
+}
+
+.email {
+  background: linear-gradient(#defbda, #defbda 45%,#8cc185 45% ,#8cc185);
+}
+
+// Main page
+.main-page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  background: #defbda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20vh 7vw 10vh 7vw;
+}
+
+.main-page-card {
+  text-align: center;
+  h1 {
+    font-size: 7vh;
+    margin-bottom: 2vh;
+  }
+  span {
+    font-size: 4vh;
+  }
+}
+
+.main-page-description {
+  text-align: center;
+}
+
+.main-page-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page-media {
+  display: flex;
+  margin-bottom: 1vh;
+  justify-content: space-between;
+  width: 30vw;
+  font-size: 4vh;
+}
+
+#main-page {
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+}
+
+// Projects
+.projects {
+  background: #f6f7eb;
+}
+
+.projects {
+  position: relative;
+  bottom: 100vh;
+  h2 {
+    display: none;
+  }
+  article {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: inherit;
+    img {
+      height: 30vh;
+    }
+    p {
+      text-align: center;
+      padding: 0 5vw;
+    }
+    a {
+      background: linear-gradient(#f6f7eb, #f6f7eb 45%,#f7bbbb 45% ,#f7bbbb) ;
+    }
+  }
+  .page-switcher {
+    padding: 0 25vw;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.technologies, .project-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  margin-top: 3vh;
+  span {
+    background: #f7bbbb;
+    padding: 1vh 1vw 0.1vh 1vw;
+    margin-bottom: 1vh;
+  }
+  span:not(:last-child), a:not(:last-child) {
+    margin-right: 2.5vw;
+  }
+}
+
+.project-links {
+  margin-top: 2vh;
+}
+
+#first-project {
+  bottom: 200vh;
+  transition: opacity 1s, visibility 1s;
+}
+
+#second-project {
+  bottom: 100vh;
+  transition: opacity 1s, visibility 1s;
+}
+
+#projects {
+  z-index: 1;
+  transition: opacity 1s, visibility 1s;
+}
+
+// Publications
+.publications {
+  position: relative;
+  bottom: 400vh;
+  background: #f6f7eb;
+  width: 100vw;
+  height: 100vh;
+  padding: 17vh 10vw 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  p {
+    text-align: center;
+  }
+  h3 {
+    background: linear-gradient(#f6f7eb, #f6f7eb 60%,#f7bbbb 60% ,#f7bbbb);
+    display: inline;
+    line-height: 4vh;
+  }
+}
+
+//// Desktop version
+
+@media only screen and (min-width: 1200px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+
+  $arrow-size: 1vw;
+  .arrow-left {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-right: $arrow-size solid #2f394d;
+    &:not(:last-child) {
+      margin-right: -0.5vw;
+    }
+  }
+
+  .arrow-right {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-left: $arrow-size solid #2f394d;
+    &:not(:last-child) {
+      margin-right: -0.5vw;
+    }
+  }
+
+  #first-switcher-desktop {
+    justify-content: center;
+  }
+
+  .main-page {
+    width: 33vw;
+    box-shadow: -20px 0px 7px 16px;
+  }
+
+  .main-page-media {
+    width: 10vw;
+  }
+
+  .fa-linkedin{
+    transition: color 1s;
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  .fa-twitter{
+    transition: color 1s;
+    &:hover {
+      color: #1da1f3;
+    }
+  }
+
+  .fa-github{
+    transition: color 1s;
+    &:hover {
+      color: #61865c;
+    }
+  }
+
+  .projects {
+    article {
+      width: 67vw;
+      left: 33vw;
+      padding-top: 10vh;
+      padding-bottom: 5vh;
+      img {
+        height: 45vh;
+      }
+    }
+    .page-switcher {
+    width: 67vw;
+    }
+  }
+
+  .technologies, .project-links {
+    span {
+      padding: 1vh 0.5vw 0.1vh 0.5vw;
+    }
+    span:not(:last-child), a:not(:last-child) {
+      margin-right: 1.5vw;
+    }
+  }
+
+  .publications {
+    width: 67vw;
+    left: 33vw;
+    padding: 10vh 10vw 5vh 10vw;
+    align-items: flex-start;
+    h2, .page-switcher {
+      align-self: center;
+    }
+  }
+}
