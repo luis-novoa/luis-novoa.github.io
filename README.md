@@ -4,7 +4,7 @@ Responsive website to showcase my latest projects. Inspired by [Charlie Waite's]
 
 ## Live Page
 
-[Check the website online!](https://runnerln.herokuapp.com/)
+[Check the website online!](https://luis-novoa.github.io/)
 
 ## Built With
 
