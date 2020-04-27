@@ -11,6 +11,8 @@ let hideSecondProject = document.getElementById('hide-second-project');
 let showSecondProject = document.getElementById('show-second-project');
 let hideThirdProject = document.getElementById('hide-third-project');
 let showThirdProject = document.getElementById('show-third-project');
+let hideProjectSection = document.getElementById('hide-project-section');
+let showProjectSection = document.getElementById('show-project-section');
 
 function hide(button, target) {
   button.addEventListener('click', () => {
@@ -35,5 +37,8 @@ show(showFirstProject, firstProject);
 hide(hideSecondProject, secondProject);
 show(showSecondProject, secondProject);
 
-hide(hideThirdProject, projectSection);
-show(showThirdProject, projectSection);
+hide(hideThirdProject, thirdProject);
+show(showThirdProject, thirdProject);
+
+hide(hideProjectSection, projectSection);
+show(showProjectSection, projectSection);

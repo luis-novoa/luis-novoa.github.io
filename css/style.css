@@ -300,13 +300,19 @@ header {
 }
 
 #first-project {
-  bottom: 200vh;
+  bottom: calc((4 - 1) * 100vh);
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
-  bottom: 100vh;
+  bottom: calc((4 - 2) * 100vh);
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+#third-project {
+  bottom: calc((4 - 3) * 100vh);
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
@@ -319,7 +325,7 @@ header {
 
 .publications {
   position: relative;
-  bottom: 400vh;
+  bottom: calc((4 + 1) * 100vh);
   background: #f6f7eb;
   width: 100vw;
   height: 100vh;
