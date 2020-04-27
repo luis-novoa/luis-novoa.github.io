@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap');
 $big-size: 3.5vh;
 $little-size: 3vh;
+$number-of-projects: 4;
 
 * {
   box-sizing: border-box;
@@ -230,12 +231,17 @@ header {
 }
 
 #first-project {
-  bottom: 200vh;
+  bottom: calc((#{$number-of-projects} - 1) * 100vh);
   transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
-  bottom: 100vh;
+  bottom: calc((#{$number-of-projects} - 2) * 100vh);
+  transition: opacity 1s, visibility 1s;
+}
+
+#third-project {
+  bottom: calc((#{$number-of-projects} - 3) * 100vh);
   transition: opacity 1s, visibility 1s;
 }
 
@@ -247,7 +253,7 @@ header {
 // Publications
 .publications {
   position: relative;
-  bottom: 400vh;
+  bottom: calc((#{$number-of-projects} + 1) * 100vh);
   background: #f6f7eb;
   width: 100vw;
   height: 100vh;
