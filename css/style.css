@@ -20,7 +20,7 @@ body {
 h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 3.5vh;
 }
 
 a {
@@ -102,14 +102,6 @@ header {
           box-shadow: 0px -20px 7px 16px;
 }
 
-header span {
-  font-size: 1.4rem;
-}
-
-header a {
-  font-size: 1em;
-}
-
 .profile-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +128,7 @@ header a {
 }
 
 .social-media {
-  font-size: 1.4rem;
+  font-size: 3.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +141,10 @@ header a {
 .email {
   background: -webkit-gradient(linear, left top, left bottom, from(#defbda), color-stop(45%, #defbda), color-stop(45%, #8cc185), to(#8cc185));
   background: linear-gradient(#defbda, #defbda 45%, #8cc185 45%, #8cc185);
-  font-size: 0.8em;
+}
+
+#email-header {
+  font-size: 2.5vh;
 }
 
 .main-page {
@@ -419,9 +414,6 @@ header a {
   }
   .fa-github:hover {
     color: #61865c;
-  }
-  .email {
-    font-size: 1em;
   }
   .projects article {
     width: 67vw;
