@@ -143,6 +143,10 @@ header {
   background: linear-gradient(#defbda, #defbda 45%, #8cc185 45%, #8cc185);
 }
 
+#email-header {
+  font-size: 2.5vh;
+}
+
 .main-page {
   height: 100vh;
   width: 100vw;
@@ -300,19 +304,25 @@ header {
 }
 
 #first-project {
-  bottom: calc((4 - 1) * 100vh);
+  bottom: calc((5 - 1) * 100vh);
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
 
 #second-project {
-  bottom: calc((4 - 2) * 100vh);
+  bottom: calc((5 - 2) * 100vh);
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
 
 #third-project {
-  bottom: calc((4 - 3) * 100vh);
+  bottom: calc((5 - 3) * 100vh);
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+#fourth-project {
+  bottom: calc((5 - 4) * 100vh);
   -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
@@ -325,7 +335,7 @@ header {
 
 .publications {
   position: relative;
-  bottom: calc((4 + 1) * 100vh);
+  bottom: calc((5 + 1) * 100vh);
   background: #f6f7eb;
   width: 100vw;
   height: 100vh;
