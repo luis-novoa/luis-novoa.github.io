@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap');
 $big-size: 3.5vh;
 $little-size: 3vh;
-$number-of-projects: 5;
+$number-of-projects: 4;
 
 * {
   box-sizing: border-box;
@@ -120,10 +120,6 @@ header {
 
 .email {
   background: linear-gradient(#defbda, #defbda 45%,#8cc185 45% ,#8cc185);
-}
-
-#email-header {
-  font-size: 2.5vh;
 }
 
 // Main page
@@ -249,11 +245,6 @@ header {
   transition: opacity 1s, visibility 1s;
 }
 
-#fourth-project {
-  bottom: calc((#{$number-of-projects} - 4) * 100vh);
-  transition: opacity 1s, visibility 1s;
-}
-
 #projects {
   z-index: 1;
   transition: opacity 1s, visibility 1s;
@@ -341,10 +332,6 @@ header {
       color: #61865c;
     }
   }
-
-  // .email {
-  //   font-size: 1rem;
-  // }
 
   .projects {
     article {
