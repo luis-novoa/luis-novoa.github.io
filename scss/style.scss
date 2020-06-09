@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&family=Rubik:wght@500&display=swap');
 $big-size: 3.5vh;
 $little-size: 3vh;
-$number-of-projects: 4;
+$number-of-projects: 5;
 
 * {
   box-sizing: border-box;
@@ -246,6 +246,11 @@ header {
 
 #third-project {
   bottom: calc((#{$number-of-projects} - 3) * 100vh);
+  transition: opacity 1s, visibility 1s;
+}
+
+#fourth-project {
+  bottom: calc((#{$number-of-projects} - 4) * 100vh);
   transition: opacity 1s, visibility 1s;
 }
 
